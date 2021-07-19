@@ -81,6 +81,15 @@ Heat flux       & $q''=\dot{Q}/A$ & $[W/m^2]$      \\ \hline
         \text{where } h_r &= \text{radiation heat transfer coefficient, W/$m^2$K}\\ 
         &=\epsilon \sigma (T_s + T_{surr})(T_s^2+T_{surr}^2)
     \end{align*}
+    \item \textbf{\color{red}Overall\color{black}} heat flux for radiation:
+    \begin{equation*}
+        \dot{Q} = E + (\rho - \alpha - \tau) \cdot G
+    \end{equation*}
+    \item \textbf{\color{red}Net\color{black}} heat flux for radiation:
+    \begin{align*}
+        \dot{Q} &= \text{total leaving surface} - \text{total approaching surface} \\
+        \dot{Q} &= E + (\rho+\tau ) G - G
+    \end{align*}
 \end{itemize}
 
 \large\textbf{Heat Generation}
