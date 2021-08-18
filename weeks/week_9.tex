@@ -38,6 +38,10 @@
         \end{itemize}
         Gases behave similarly at T and P normalized wrp. to their critical $P_{cr}$ and $T_{cr}$.
     \end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{images/Generalized_Compressibility_Chart.png}
+\end{figure}
     \item \textbf{\ul{Van der Waals Equation of State (EOS):}}
     \begin{align*}
         \left(P+\frac{a}{v^2}\right)\cdot \left( v-b \right) &= RT \\
@@ -170,7 +174,7 @@
         \item For idea gas:
         \begin{align*}
             h_2 - h_1 &= \int_{T_1}^{T_2} c_p dT \\
-            &= c_p (T_2 - T_1) \\
+            &= c_p (T_2 - T_1)
         \end{align*}
         \item For real gas (Maxwell's relation):
         \begin{align*}
@@ -178,6 +182,7 @@
             &+ \int_{P_1}^{P_2} \left[v - T \left(\frac{\partial v}{\partial T}\right)_P \right] dP \\
             &= (h_2 - h_1)_{ideal} - R T_{cr} (Z_{h2} - Z_{h1})
         \end{align*}
+        Note that $R$ is for specific gas, unit in kJ/kg$\cdot$K.
     \end{itemize}
     \item Internal energy departure
     \begin{align*}
@@ -202,3 +207,15 @@
         \end{equation*}
     \end{itemize}
 \end{itemize}
+
+$Z_h$ Chart 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{images/Z_h_table.png}
+\end{figure}
+
+$Z_s$ Chart
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{images/Z_s_table.png}
+\end{figure}

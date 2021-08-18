@@ -1,0 +1,207 @@
+\section{Week 10}
+{\Large \textbf{{\color{red}\underline{First-Law Analysis of Combustion}}}}
+
+
+
+Thermodynamic quantities are referenced to a standard state, usually at 298 K and 1 atm.
+
+\begin{itemize}
+    \item Use ideal gas law for combustions!
+    \item First Law of Thermodynamics
+    \begin{itemize}
+        \item constant volume system
+        \begin{align*}
+            dU &= dQ - dW
+        \end{align*}
+        where $dU$ = change of internal energy, $dQ$ = heat input to the system, $dW$ = work done by the system on its surroundings.
+        \item constant pressure system
+        \begin{align*}
+            dH &= dQ - dU
+        \end{align*}
+        where $dH$ = change of internal energy, $dQ$ = heat input to the system, $dW$ = work done by the system on its surroundings, except expansion work $pdV$.
+    \end{itemize}
+    
+    \item 1st Law for steady flow system
+    \begin{equation*}
+        \dot{H}_o - \dot{H}_i = \dot{Q} - \dot{W}
+    \end{equation*}
+\end{itemize}
+
+\begin{itemize}
+    \item Partial pressure
+    \begin{equation*}
+        P_i = y_i \cdot P_m
+    \end{equation*}
+    \item Partial volume
+    \begin{equation*}
+        v_i = y_i \cdot V_m
+    \end{equation*}
+    \item Partial heat capacity
+    \begin{equation*}
+        c_{p,m} = \sum y_i \cdot c_{p,i}
+    \end{equation*}
+    \item Useful molecular weights:
+    \begin{itemize}
+        \item $W_H = 1$ kg/kmol, $W_{H_2} = 2$ kg/kmol;
+        \item $W_C = 12$ kg/kmol;
+        \item $W_O = 16$ kg/kmol;
+        \item $W_N = 14$ kg/kmol.
+        \item $W_{air} = W_{O_2} + 3.76\cdot W_{N_2} = 137.28$ kg/kmol
+    \end{itemize}
+    \item {\color{blue}\textbf{\ul{Calorific equation of state}}}
+    \begin{itemize}
+        \item are expressions relating energy variables to pressure and temperature:
+        \begin{align*}
+            u &= u (T,v) \; \text{internal energy} \\
+            h &= h (T,P) = u + Pv \; \text{enthalpy}
+        \end{align*}
+        For ideal gases, pressure and volume dependence are ignored:
+        \begin{align*}
+            u &= u(T) \\
+            h &= h(T)
+        \end{align*}
+    \end{itemize}
+    \item {\color{blue}\textbf{\ul{Total enthalpy / Species enthalpy}}}
+    \begin{itemize}
+        \item Symbol: $h_{{\color{blue}t},{\color{red}m}}$ for {\color{blue}\textbf{t}}otal enthalpy of {\color{red}\textbf{m}}ixture; $\tilde{h}_{{\color{blue}t},{\color{red}m}}$ for mole based unit.
+        \item Species / total enthalpy is used to quantify the energy change during chemical reaction and phase changes.
+        \item By analogy to relative velocities,
+        \begin{align*}
+            h_{t,m} &= h_{f,m}^{0} + \Delta h_m \\
+            v_B &= v_A + v_{B/A} \\
+            \text{where } v_A &= \cancelto{0}{v_O} + v_{A/O}
+        \end{align*}
+    \end{itemize}
+    \item {\color{blue}\textbf{\ul{Enthalpy of formation}}} 
+    \begin{itemize}
+        \item Symbol: $h_{{\color{blue}f},{\color{red}m}}^{{\color{brown}0}}$ for enthalpy of {\color{blue}\textbf{f}}ormation of a {\color{red}\textbf{m}}ixture measured at standard state of ${\color{brown}[P^{0},\, T^{0}] = [1\, \text{atm},\, 298 K]}$; $\tilde{h}_{{\color{blue}f},{\color{red}m}}^{{\color{brown}0}}$ for mole based unit.
+        \item Enthalpy of formation is associated with energy in {\color{red}chemical bonds} or {\color{red}intramolecular bonds};
+        \item Found by using Tables
+    \end{itemize}
+    \item {\color{blue}\textbf{\ul{Sensible enthalpy change}}}
+    \begin{itemize}
+        \item Symbol: $\Delta h_{{\color{red}m}}$ for sensible enthalpy change of a {\color{red}m}ixture.
+        \begin{equation*}
+            \Delta h_{m} = c_{p,m} \cdot (T - T^0)
+        \end{equation*}
+    \end{itemize}
+    
+ 
+    \item {\color{blue}\textbf{\ul{Types of Combustion}}}
+    \begin{enumerate}
+        \item {\color{brown}\textbf{Stoichiometric mixture:}} just the amount needed of the oxidiser to completely burn a quantity of fuel;
+        \item {\color{brown}\textbf{Lean mixture:}} not enough fuel is supplied;
+        \item {\color{brown}\textbf{Rich mixture:}} too much fuel is supplied (not enough oxidiser).
+    \end{enumerate}
+    \item Air-fuel ratio \& Equivalence ratio
+    \begin{itemize}
+        \item Air-fuel ratio (AFR):
+        \begin{align*}
+            \text{mass-based} \; \text{AFR} &= \frac{m_{air}}{m_{fuel}} \\
+            \text{mole-based} \; \text{AFR} &= \frac{N_{air}}{N_{fuel}}
+        \end{align*}
+        \item Fuel-air ratio (FAR):
+        \begin{align*}
+            \text{mass-based} \; \text{FAR} &= \frac{m_{fuel}}{m_{air}} \\
+            \text{mole-based} \; \text{FAR} &= N_{fuel} / N_{air}
+        \end{align*}
+        \item Equivalence ratio ($\phi$)
+        \begin{align*}
+            \phi &= \frac{(\text{AFR})_{st}}{\text{AFR}} = \frac{\text{FAR}}{(\text{FAR})_{st}}
+        \end{align*}
+        $\phi >1 \rightarrow$ rich, $\phi < 1 \rightarrow$ lean
+        \item Relative air-to-fuel ratio ($\lambda$)
+        \begin{equation*}
+            \lambda = \frac{1}{\phi}
+        \end{equation*}
+        $\lambda > 1 \rightarrow$ lean, $\lambda < 1 \rightarrow$ rich.
+        \item $\phi$ and $\lambda$ are the same regardless of mole-based or mass-based unit system.
+    \end{itemize}
+    \item Writing the non-stoichiometric equations
+    \begin{itemize}
+        \item Standard form:
+        \begin{align*}
+            &\text{CH}_4 + a (\text{O}_2 + 3.76 \text{N}_2 ) \\
+            &\rightarrow b \text{CO}_2 + c \text{H}_2 O + d \text{N}_2
+        \end{align*}
+        \item want \textbf{\ul{per unit mole of fuel burned:}}
+        \begin{align*}
+            &\text{CH}_4 + \frac{a}{\phi} (\text{O}_2 + 3.76 \text{N}_2 ) \\
+            &\rightarrow b \text{CO}_2 + c \text{H}_2 O + d \text{N}_2 \\
+            &\text{CH}_4 + a \lambda (\text{O}_2 + 3.76 \text{N}_2 ) \\
+            &\rightarrow b \text{CO}_2 + c \text{H}_2 O + d \text{N}_2
+        \end{align*}
+        \item want \textbf{\ul{per unit mole of oxygen burned:}}
+        \begin{align*}
+            &\phi \text{CH}_4 + a \lambda (\text{O}_2 + 3.76 \text{N}_2 ) \\
+            &\rightarrow b \text{CO}_2 + c \text{H}_2 O + d \text{N}_2
+        \end{align*}
+    \end{itemize}
+    \item Enthalpy of reaction: steady-flow energy equation (SFEE)
+    \begin{align*}
+        \Delta h_R &= q_{cv} = h_{prod} - h_{reac}
+    \end{align*}
+\end{itemize}
+
+{\Large \textbf{{\color{red}\underline{Second-Law Analysis of Combustion}}}}
+
+\begin{itemize}
+    \item Why needed?
+    \begin{itemize}
+        \item First-law analysis requires the assumption of \textbf{\ul{complete combustion}}.
+        \item In high-temperature combustion processes, the reaction can go inverse due to dissociation. High energy molecules are constantly breaking up and reforming.
+        \item Second-law analysis is needed to figure out how much reverse reaction is going on.
+    \end{itemize}
+    \item {\color{red}Entropy} is a measure of {\color{blue}unavailability of a system's energy to do work}, and of the {\color{brown}quality of energy (high entropy = poor quality)}.
+    \item Units
+    \begin{align*}
+        S \; \qquad &\text{(kJ/K)} \\
+        s \; \qquad &\text{(kJ/kg$\cdot$K)} \\
+        \tilde{s} \; \qquad  &\text{kJ/kmol$\cdot$K}
+    \end{align*}
+    \item \textbf{\ul{Gibbs energy}} is related to the {\color{blue}availability of energy} = maximal amount of non-expansion work that can be down by a thermodynamically closed system with no mass transfer across boundaries.
+    \item Units
+    \begin{align*}
+        G &= H_t - TS \; \qquad \text{(kJ/K)} \\
+        g_m &= h_{t,m} - T s_{t,m} \; \qquad \text{(kJ/kg)} \\
+        \tilde{g}_m &= \tilde{h}_{t,m} - T \tilde{s}_{t,m} \; \qquad  \text{kJ/kmol}
+    \end{align*}
+\end{itemize}
+
+\begin{itemize}
+    \item {\color{blue}\textbf{\ul{Species/total Enthalpy}}}
+    \begin{itemize}
+        \item Definition
+        \begin{align*}
+            &\overline{s}_i (T, P_i) - \overline{s}^{0}_{i} (T^0 ,P^0 ) \\
+            &= \int_{T^0}^{T} \frac{\overline{c}_{p,i}(T')}{T'} dT' - R_u \ln(\frac{P_i}{P_0})
+        \end{align*}
+        \item Useful form
+        \begin{align*}
+            s_{t,m} &= s_{m}^{0} + \Delta s_m
+        \end{align*}
+    \end{itemize}
+    \item Entropy at standard state (found by tables)
+    \begin{equation*}
+        s_{m}^{0} = \sum y_i \cdot s_{m,i}^{0}
+    \end{equation*}
+    \item Change in entropy as results of temperature and pressure change
+    \begin{align*}
+        \Delta s_m &= c_{p,m} \cdot \ln\left(\frac{T_2}{T_1}\right) - {\color{blue}R_m} \cdot \ln\left(\frac{P_2}{P_1}\right)\\
+        &= c_{p,m} \cdot \ln\left(\frac{T}{T_0}\right) - {\color{red}R_u} \cdot  \left[\sum y_i \cdot \ln(y_i)\right]
+    \end{align*}
+\end{itemize}
+
+{\Large \textbf{{\color{blue}\underline{Assumptions used in calculations}}}}
+
+\begin{itemize}
+    \item Gas behaves like ideal gases;
+    \item 1D model;
+    \item Complete combustion;
+    \item Combustion happens instantaneously at constant pressure;
+    \item Fuel is introduced instantaneously with the specified conditions;
+    \item The process is adiabatic (approximated using the adiabatic flame temperature);
+    \item Assume no dissociation. If temperature is sufficiently high such that dissociation is significant, \textbf{or} when combustion is rich, use {color{red}\ul{second law analysis}}. If dissociation occurs, products are not just $CO_2$ and $H_2 O$;
+    \item Either constant pressure (useful for most problems) or constant volume (rare) is assumed.
+\end{itemize}
+
